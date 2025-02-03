@@ -6,6 +6,128 @@
     <title>Personal Budget - Free Budget Tracker App for Managing Finances</title>
     <meta name="description" content="A free personal budget app to track your finances and manage your spending.">
     <meta name="keywords" content="app, free, budget, finance, money, tracker">
+    
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Skip to content link */
+        .skip {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .skip:focus {
+            top: 10px;
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-color: #00aaff;
+            color: white;
+            border-bottom: 5px solid #005f73;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            background-color: #005f73;
+            border-radius: 5px;
+        }
+
+        /* Main content */
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .page-area {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #00aaff;
+        }
+
+        /* Chart area */
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
 
@@ -79,7 +201,7 @@
 <!-- This is a Semantic HTML Change -->
 <footer class="bottom">
     <div class="center">
-        All rights reserved &copy; Fabio Nolasco
+        All rights reserved &copy; Fabio Nolasco | <a href="https://github.com/your-repo" target="_blank">GitHub</a>
     </div>
 </footer>
 
