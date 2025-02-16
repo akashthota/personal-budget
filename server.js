@@ -12,7 +12,7 @@ const port = 3000;
 
 app.use(cors());
 
-const budget = {
+/*const budget = {
     myBudget: [
         {
             title: 'Restaurants',
@@ -32,6 +32,7 @@ const budget = {
         },
     ]
 };
+*/
 
 
 
@@ -41,9 +42,9 @@ const budget = {
 */
 
 
-app.get('/budget', (req, res) => {
+/* app.get('/budget', (req, res) => {
     res.json(budget);
- });   
+ });  */ 
 
  app.get('/budget', (req, res) => {
     fs.readFile('budget-data.json', 'utf8', (err, data) => {
